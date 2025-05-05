@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UMLModel>
+  <Class name="Pessoa">
+    <Attribute name="nome" type="String"/>
+    <Attribute name="documento" type="String"/>
+    <Attribute name="telefone" type="String"/>
+    <Attribute name="email" type="String"/>
+  </Class>
+  <Class name="Cliente" superClass="Pessoa">
+    <Attribute name="enderecoEntrega" type="String"/>
+  </Class>
+  <Class name="Fornecedor" superClass="Pessoa">
+    <Attribute name="cnpj" type="String"/>
+    <Attribute name="produtoFornecido" type="String"/>
+  </Class>
+  <Class name="Empregado" superClass="Pessoa">
+    <Attribute name="matricula" type="String"/>
+    <Attribute name="cargo" type="String"/>
+  </Class>
+  <Class name="Vendedor" superClass="Empregado">
+    <Attribute name="comissao" type="double"/>
+  </Class>
+  <Class name="Usuario" superClass="Pessoa">
+    <Attribute name="login" type="String"/>
+    <Attribute name="senha" type="String"/>
+  </Class>
+</UMLModel>
